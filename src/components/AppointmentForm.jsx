@@ -27,10 +27,10 @@ function AppointmentForm({ addEvent }) {
       onSubmit={handleSubmit}
       className="mt-4 p-4 bg-white shadow-lg rounded-lg"
     >
-      <h2 className="text-lg font-semibold mb-4">Aggiungi un Appuntamento</h2>
+      <h2 className="text-lg font-semibold mb-4">Add an appointment</h2>
       <input
         type="text"
-        placeholder="Titolo dell'appuntamento"
+        placeholder="Title"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         required
@@ -61,7 +61,7 @@ function AppointmentForm({ addEvent }) {
         type="submit"
         className="bg-red-400 text-white p-2 w-full rounded-lg hover:bg-red-700"
       >
-        Aggiungi Appuntamento
+        Add
       </button>
     </form>
   );
